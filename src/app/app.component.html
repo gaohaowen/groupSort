@@ -1,0 +1,14 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:left">
+  <ul>
+    <li *ngFor="let item of sorted; let i = index">     
+      {{item.gender}}
+        <ol>
+            <li *ngFor="let pet of item.pets; let i = idx"> 
+              {{pet.name}}
+            </li>
+        </ol>  
+    </li>
+</ul>
+</div>
+
